@@ -1,0 +1,248 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Stylish Article
+% LaTeX Template
+% Version 2.1 (1/10/15)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Mathias Legrand (legrand.mathias@gmail.com) 
+% With extensive modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[fleqn,10pt]{SelfArx} % Document font size and equations flushed left
+
+\usepackage[english]{babel} % Specify a different language here - english by default
+
+\usepackage{lipsum} % Required to insert dummy text. To be removed otherwise
+
+%----------------------------------------------------------------------------------------
+%	COLUMNS
+%----------------------------------------------------------------------------------------
+
+\setlength{\columnsep}{0.55cm} % Distance between the two columns of text
+\setlength{\fboxrule}{0.75pt} % Width of the border around the abstract
+
+%----------------------------------------------------------------------------------------
+%	COLORS
+%----------------------------------------------------------------------------------------
+
+\definecolor{color1}{RGB}{0,0,90} % Color of the article title and sections
+\definecolor{color2}{RGB}{0,20,20} % Color of the boxes behind the abstract and headings
+
+%----------------------------------------------------------------------------------------
+%	HYPERLINKS
+%----------------------------------------------------------------------------------------
+
+\usepackage{hyperref} % Required for hyperlinks
+\hypersetup{hidelinks,colorlinks,breaklinks=true,urlcolor=color2,citecolor=color1,linkcolor=color1,bookmarksopen=false,pdftitle={Title},pdfauthor={Author}}
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE INFORMATION
+%----------------------------------------------------------------------------------------
+
+\JournalInfo{Journal of Praba's curiosity , Vol. I, No. 1, 1-5, 2017} % Journal information
+\Archive{@prabasiva} % Additional notes (e.g. copyright, DOI, review/research article)
+
+\PaperTitle{Dynamics of Amazon's diversified business model} % Article title
+
+\Authors{Praba Siva\textsuperscript{1}* } % Authors
+\affiliation{\textsuperscript{1}\textit{Department of Applied Mathematics, University of Michigan, Dearborn, Michigan}} % Author affiliation
+\affiliation{*\textbf{Corresponding author}: praba@umich.edu} % Corresponding author
+
+\Keywords{Amazon --- Dynamial Systems --- Cloud Computing --- Business Strategy --- Competitive analysis --- Game Theory --- Economic Analysis} % Keywords - if you don't want any simply remove all the text between the curly brackets
+\newcommand{\keywordname}{Keywords} % Defines the keywords heading name
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT
+%----------------------------------------------------------------------------------------
+
+%\Abstract{\lipsum[1]~}
+\Abstract
+{Amazon's AWS (Amazon Web Service) division is a dominant player in the cloud computing market and continues to grow. Amazon was incubated as an internet company to sell books and then it evolved into a generic market place,where Amazon and any qualified suppliers can sell their products to end customers. Amazon provides a seem less experience to the end customer by automating and optimizing the supply chain and distribution. Today, Amazon sells various products in their market place and continue to enter into new market ranging from financial services,insurance, retail, distribution, content creation, content delivery and etc. As Amazon enters into the new markets, they compete with the current AWS's customers in their core business. Due to Amazon's direct threat to the core business of an existing AWS's customers, the current AWS's customers evaluates their cloud strategy and AWS's as their cloud service provider. Objective of this paper is to study the business dynamics, various scenarios and its bottom line impact to Amazon as it continues to enter into the new market}  
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\flushbottom % Makes all text pages the same height
+
+\maketitle % Print the title and abstract box
+
+\tableofcontents % Print the contents section
+
+\thispagestyle{empty} % Removes page numbering from the first page
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
+
+\section*{Introduction} % The \section*{} command stops section numbering
+
+\addcontentsline{toc}{section}{Introduction} % Adds this section to the table of contents
+
+Information technology (IT) is an integral for any business operation in today's digital world. Interaction with the end customers, partners, suppliers, employees and other stakeholders are conducted electronically for almost all types of business. Activities performed from inception to a product or service launch in a business are performed electronically. Managing all transactions in the business environment is vital for survival and maximizing the digital twin of all business operations is key to thrive in competitive digital business landscape. Over the years, the company across the globe have made significant investments in the IT and major investment made in the establishment and management of IT infrastructure. IT infrastructure is a collection of back end computer system like servers, storages, network appliances, network connectivity, cooling, heating, backup generators and etc. 
+With the introduction of cloud computing in last few years, to optimize the infrastructure investment, the major corporations have been shifting their infrastructure investment towards cloud computing platforms. The cloud computing platform enables the organization to pay only for the computing resources they utilize. In the on premise data center environment, typically, the time taken to provision an end to end infrastructure environment to run a business application ranges between 2 months to 8 months.The execution time  depends on IT organization and process complexity and competency of the organization. Due to this high turn-around time, generally, the organization had a generous estimation practices for hardware and software resources to run the business application in the on premise data centers.  Due to this estimation practices,excess hardware and software are procured and hence, the utilization of the hardware in the data centers is very low and in the range of less than 10\% utilization. At the end, the organization was spending lots of its time to plan and provision an infrastructure environment and was utilizing only less than 10\% of its investment. The cloud computing platform solved both these problems, corporation across the industry throughout the globe have rapidly adopted cloud computing platform and hence the cloud computing market has grown significantly and continue to grow rapidly. 
+ Amazon started their cloud computing services, AWS, in 2005 and grew exponentially. Other top players like Microsoft and Google came late to cloud market and gaining momentum. Due to various factors, Amazon AWS has a 90\% market share, Microsoft and Google shares 8\% of the market and remaining 2\% of the market share was captured by players like IBM, Rackspace and others. 
+
+The total IT infrastructure spend in 2017 is more than \$2.5 trillion US dollars (Source: Gartner) and around \$50 billion US dollars spent (Source:cbre)  in constructing new data centers in United States. The majority of new data center construction spent was made by major cloud providers like Amazon, Microsoft and Google. 
+
+\begin{table}[hbt]
+\caption{World wide IT spend in 2017\\ USD(\$) in Trillions}
+\centering
+\begin{tabular}{llr}
+\toprule
+ Infrastructure & IT Service & Total \\
+\midrule
+$2.577$ & $0.931$ & $3.508$ \\
+\bottomrule
+\end{tabular}
+\label{tab:label}
+\end{table}
+
+Excluding the share by non-US market and investment made by cloud providers like Amazon, Microsoft and Google, US market spends close to \$1.0 Trillion US dollars in the IT infrastructure. 
+
+\begin{table}[hbt]
+\caption{Net Sales of Amazon}
+\centering
+\begin{tabular}{llr}
+\toprule
+\multicolumn{4}{c}{Sales by Amazon NA and AWS} \\
+\cmidrule(r){1-3}
+Division & 2014 & 2015 & 2016 \\
+\midrule
+Amazon NA & $50.8$ & $63.7$ & $78.7$ \\
+AWS & $4.6$ & $7.8$ & $12.2$ \\
+Richard & Miles & $2$ \\
+\bottomrule
+\end{tabular}
+\label{tab:label}
+\end{table}
+ and some mathematics $\cos\pi=-1$ and $\alpha$ in the text\footnote{And some mathematics $\cos\pi=-1$ and $\alpha$ in the text.}.
+
+%------------------------------------------------
+
+\section{Methods}
+
+\begin{figure*}[ht]\centering % Using \begin{figure*} makes the figure take up the entire width of the page
+\includegraphics[width=\linewidth]{view}
+\caption{Wide Picture}
+\label{fig:view}
+\end{figure*}
+
+\lipsum[4] % Dummy text
+
+\begin{equation}
+\cos^3 \theta =\frac{1}{4}\cos\theta+\frac{3}{4}\cos 3\theta
+\label{eq:refname2}
+\end{equation}
+
+\lipsum[5] % Dummy text
+
+\begin{enumerate}[noitemsep] % [noitemsep] removes whitespace between the items for a compact look
+\item First item in a list
+\item Second item in a list
+\item Third item in a list
+\end{enumerate}
+
+\subsection{Subsection}
+
+\lipsum[6] % Dummy text
+
+\paragraph{Paragraph} \lipsum[7] % Dummy text
+\paragraph{Paragraph} \lipsum[8] % Dummy text
+
+\subsection{Subsection}
+
+\lipsum[9] % Dummy text
+
+\begin{figure}[ht]\centering
+\includegraphics[width=\linewidth]{results}
+\caption{In-text Picture}
+\label{fig:results}
+\end{figure}
+
+Reference to Figure \ref{fig:results}.
+
+%------------------------------------------------
+
+\section{Results and Discussion}
+
+\lipsum[10] % Dummy text
+
+\subsection{Subsection}
+
+\lipsum[11] % Dummy text
+
+\begin{table}[hbt]
+\caption{Table of Grades}
+\centering
+\begin{tabular}{llr}
+\toprule
+\multicolumn{2}{c}{Name} \\
+\cmidrule(r){1-2}
+First name & Last Name & Grade \\
+\midrule
+John & Doe & $7.5$ \\
+Richard & Miles & $2$ \\
+\bottomrule
+\end{tabular}
+\label{tab:label}
+\end{table}
+
+\subsubsection{Subsubsection}
+
+\lipsum[12] % Dummy text
+
+\begin{description}
+\item[Word] Definition
+\item[Concept] Explanation
+\item[Idea] Text
+\end{description}
+
+\subsubsection{Subsubsection}
+
+\lipsum[13] % Dummy text
+
+\begin{itemize}[noitemsep] % [noitemsep] removes whitespace between the items for a compact look
+\item First item in a list
+\item Second item in a list
+\item Third item in a list
+\end{itemize}
+
+\subsubsection{Subsubsection}
+
+\lipsum[14] % Dummy text
+
+\subsection{Subsection}
+
+\lipsum[15-23] % Dummy text
+
+%------------------------------------------------
+\phantomsection
+\section*{Acknowledgments} % The \section*{} command stops section numbering
+
+\addcontentsline{toc}{section}{Acknowledgments} % Adds this section to the table of contents
+
+So long and thanks for all the fish \cite{Figueredo:2009dg}.
+
+%----------------------------------------------------------------------------------------
+%	REFERENCE LIST
+%----------------------------------------------------------------------------------------
+\phantomsection
+\bibliographystyle{unsrt}
+\bibliography{sample}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
